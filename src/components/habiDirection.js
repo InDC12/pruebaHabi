@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux"
 import { addTask } from "../features/counter/counterSlice"
 import {v4 as uuid} from 'uuid'
 import {useNavigate} from 'react-router-dom'
+import "./mainHabiApp.css"
 
 
 function HabiDirection() {
@@ -32,11 +33,14 @@ function HabiDirection() {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='direction'>
             <h3>Direccion</h3>
             <input name="description" type="text" onChange={handleChange} />
             <hr />
             <button>Siguiente</button>
+            <hr/>
+            <p>Paso 3 de 5</p>
+            <progress value={0.50}/>
             <hr />
         </form>
     )

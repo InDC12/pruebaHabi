@@ -9,12 +9,6 @@ export const counterSlice = createSlice({
   reducers: {
     addTask: (state,action) => {
         state.push(action.payload)
-    },
-    deleteTask: (state,action) => {
-        const stepFound = state.find(habiresume => habiresume.id ===action.payload)
-        if (stepFound) {
-            state.splice(state.indexOf(stepFound),1)
-        }
     }
   }
 })

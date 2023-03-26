@@ -1,0 +1,48 @@
+.steps-done {
+    width: auto;
+    border:1px solid #ddd;
+    height: auto;
+}
+
+.name-surname{
+    border:1px solid #ddd;
+    height: auto;
+    margin-right: 1px;
+}
+.direction{
+    border:1px solid #ddd;
+    height: auto;
+    margin-right: 1px;
+
+}
+.email{
+    border:1px solid #ddd;
+    height: auto;
+    margin-right: 1px;
+}
+.floor{
+    border:1px solid #ddd;
+    height: auto;
+    margin-right: 1px;
+}
+.zones{
+    border:1px solid #ddd;
+    height: auto;
+    margin-right: 1px;
+}
+.modal-manager {
+    display: none;
+
+}
+
+@media screen and (max-width: 420px) {
+    .steps-done{
+        display: none;
+    }
+    .modal-manager{
+        display:block;
+        align-items: center;
+    }
+
+
+}

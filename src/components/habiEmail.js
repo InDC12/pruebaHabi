@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux"
 import { addTask } from "../features/counter/counterSlice"
 import {v4 as uuid} from 'uuid'
 import {useNavigate} from 'react-router-dom'
+import "./mainHabiApp.css"
 
 function HabiEmail() {
   const [email, setEmail] = useState('');
@@ -45,11 +46,14 @@ const navigate = useNavigate()
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="email">
         <h3>Email</h3>
         <input name="description"value={email} onChange={handleChange}/>
         <hr />
         <button type="submit">Siguiente</button>
+        <hr/>
+            <p>Paso 2 de 5</p>
+            <progress value={0.25}/>
         <hr />
         {error && <h2 style={{color: 'red'}}>{error}</h2>}
       </form>
